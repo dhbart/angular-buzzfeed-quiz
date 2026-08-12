@@ -82,7 +82,9 @@
   background-color: transparent;
   border-radius: 8px;
   border: 1px solid #18ab29;
-  width: 25%;
+  min-width: 220px;
+  width: auto;
+  white-space: nowrap;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -129,3 +131,4 @@
         transform:rotate(360deg);
     }
 }
+
