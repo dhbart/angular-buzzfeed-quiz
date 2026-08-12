@@ -1,62 +1,50 @@
-**# ProjetoBuzzfeed
+# 🧠 Angular BuzzFeed Quiz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+An interactive BuzzFeed-style personality quiz built with **Angular**.
 
-## Development server
+The application presents a sequence of questions inspired by Gen Z and Gen Alpha internet culture, calculates the most frequent answer category, and displays a personalized result with a smooth loading animation.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project was originally developed during the **Santander Bootcamp (DIO)** and later expanded with new features and UI improvements.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🌐 Live Demo
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-**# 🧠 Angular BuzzFeed Quiz
-
-A fun BuzzFeed-style personality quiz built with **Angular**.
-
-The application presents a series of questions, analyzes the user's answers, and displays a personalized result based on the most frequent choice.
-
-This project was developed as part of the **Santander Bootcamp (DIO)** and customized with a modern Gen Z/Gen Alpha meme theme.
+🔗 https://quiz-aura-iota.vercel.app/
 
 ---
 
 ## 📸 Preview
 
-> Add screenshots or a GIF here.
+### Question
 
-Example:
+![Question](docs/images/question.png)
 
-![Quiz Screenshot](./src/assets/images/preview.png)
+### Loading Animation
+
+![Loading](docs/images/calculating.png)
+
+### Final Result
+
+![Result](docs/images/result.png)
+
+> Or replace the screenshots above with a single animated GIF.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- Dynamic questions loaded from a JSON file
-- Personality-based result calculation
+- Dynamic quiz powered by JSON
+- Personality result based on answer frequency
 - Responsive layout
 - Loading animation before displaying the result
-- Restart quiz functionality
-- Easily customizable questions and results
+- Restart quiz
+- Easy quiz customization
+- Mobile friendly
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Built With
 
 - Angular
 - TypeScript
@@ -65,23 +53,7 @@ Example:
 
 ---
 
-## 📂 Project Structure
-
-```text
-src/
- ├── app/
- │    ├── components/
- │    ├── pages/
- │    └── services/
- │
- ├── assets/
- │    └── data/
- │         └── quizz_questions_beta.json
-```
-
----
-
-## ▶️ Running the project
+## 🚀 Getting Started
 
 ### Clone the repository
 
@@ -89,7 +61,7 @@ src/
 git clone https://github.com/dhbart/angular-buzzfeed-quiz.git
 ```
 
-### Enter the project folder
+### Enter the project
 
 ```bash
 cd angular-buzzfeed-quiz
@@ -101,13 +73,13 @@ cd angular-buzzfeed-quiz
 npm install
 ```
 
-### Start the development server
+### Run the application
 
 ```bash
 ng serve
 ```
 
-Open your browser at:
+Open your browser:
 
 ```
 http://localhost:4200
@@ -115,44 +87,84 @@ http://localhost:4200
 
 ---
 
+## 📂 Project Structure
+
+```
+src/
+│
+├── app/
+│   ├── components/
+│   ├── pages/
+│   └── ...
+│
+├── assets/
+│   └── data/
+│       └── quizz_questions_beta.json
+│
+└── ...
+```
+
+---
+
 ## ⚙️ Customization
 
-All questions, answers, and results are stored in:
+All questions, answer mappings and final results are stored in:
 
-```text
+```
 src/assets/data/quizz_questions_beta.json
 ```
 
-You can easily create a completely different quiz by editing only this file without changing the application code.
+Changing this file is enough to create an entirely different quiz without modifying the application logic.
 
 ---
 
-## 💡 Future Improvements
+## 🧠 Result Algorithm
 
-- Multiple quiz themes
-- Sound effects
-- Progress bar
-- Dark/Light mode
-- Share result on social media
-- Animations using Angular Animations
-- Score statistics
-- Timer per question
+Each answer belongs to one of four categories:
+
+- A
+- B
+- C
+- D
+
+At the end of the quiz the application:
+
+1. Counts the occurrences of each category using a `Map`.
+2. Finds the category with the highest frequency.
+3. Displays the corresponding personality result.
+
+In case of a tie, the first category that reached the highest score is selected.
 
 ---
 
-## 📚 What I Learned
-
-During this project I practiced:
+## 📚 What I Practiced
 
 - Angular Components
-- Property Binding
 - Event Binding
+- Property Binding
 - Structural Directives
-- Component State Management
+- State Management
+- Dynamic Rendering
+- JSON Data Handling
 - TypeScript
-- Dynamic rendering using JSON
 - Responsive CSS
-- Application flow control
+- Conditional Rendering
+- User Experience improvements
+
+---
+
+## 🚀 Future Improvements
+
+- Progress bar
+- Sound effects
+- Multiple quiz themes
+- Dark Mode
+- Social sharing
+- Question animations
+- Score history
+- Randomized question order
+- Backend persistence
+- Unit tests
 
 ---
 
@@ -160,11 +172,11 @@ During this project I practiced:
 
 **Daniel Bartholdy**
 
-- LinkedIn: https://www.linkedin.com/in/daniel-bartholdy/
 - GitHub: https://github.com/dhbart
+- LinkedIn: https://www.linkedin.com/in/daniel-bartholdy/
 
 ---
 
 ## 📄 License
 
-This project was developed for educational purposes during the Santander Bootcamp by DIO.
+This project was created for educational purposes during the Santander Bootcamp by DIO.
