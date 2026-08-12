@@ -28,7 +28,6 @@ This project was originally developed during the **Santander Bootcamp (DIO)** an
 
 ![Result](docs/images/result.png)
 
-> Or replace the screenshots above with a single animated GIF.
 
 ---
 
