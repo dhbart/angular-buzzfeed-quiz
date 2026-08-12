@@ -1,0 +1,104 @@
+{
+  "title": "Teste a sua AURA!",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Que tipo de feijão você prefere comer?",
+      "options": [
+        { "id": 1, "name": "Feijão normal", "alias": "B" },
+        { "id": 2, "name": "Feijão com farinha", "alias": "D" },
+        { "id": 3, "name": "Não como feijão", "alias": "A" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Qual animal você seria?",
+      "options": [
+        { "id": 1, "name": "Capivara", "alias": "D" },
+        { "id": 2, "name": "Burro", "alias": "C" },
+        { "id": 3, "name": "Gavião", "alias": "B" },
+        { "id": 4, "name": "Girafa", "alias": "A" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Qual Brainrot você seria?",
+      "options": [
+        { "id": 1, "name": "Tralalelo Tralala", "alias": "B" },
+        { "id": 2, "name": "Bombardiro Crocodilo", "alias": "D" },
+        { "id": 3, "name": "Tung Tung Tung Sahur", "alias": "C" },
+        { "id": 4, "name": "Brr Brr Patapim", "alias": "A" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual vegetal você seria?",
+      "options": [
+        { "id": 1, "name": "Alface", "alias": "D" },
+        { "id": 2, "name": "Beterraba", "alias": "B" },
+        { "id": 3, "name": "Cenoura", "alias": "A" },
+        { "id": 4, "name": "Brócolis", "alias": "C" }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Qual cachorro você seria?",
+      "options": [
+        { "id": 1, "name": "Chihuahua", "alias": "D" },
+        { "id": 2, "name": "Pitbull", "alias": "A" },
+        { "id": 3, "name": "Rottweiler", "alias": "B" },
+        { "id": 4, "name": "Pinscher", "alias": "C" }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "20 + 20 + 20 + 7?",
+      "options": [
+        { "id": 1, "name": "67", "alias": "D" },
+        { "id": 2, "name": "Six Seven", "alias": "C" },
+        { "id": 3, "name": "6 e 7", "alias": "A" },
+        { "id": 4, "name": "Não sei", "alias": "B" }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Qual matéria você mais gosta?",
+      "options": [
+        { "id": 1, "name": "Ciências", "alias": "A" },
+        { "id": 2, "name": "Matemática", "alias": "C" },
+        { "id": 3, "name": "Português", "alias": "B" },
+        { "id": 4, "name": "Inglês", "alias": "D" }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qual seu jogo favorito no Roblox?",
+      "options": [
+        { "id": 1, "name": "Murder Mystery 2", "alias": "B" },
+        { "id": 2, "name": "Rivals", "alias": "D" },
+        { "id": 3, "name": "Roube um Brainrot", "alias": "A" },
+        { "id": 4, "name": "Brookhaven", "alias": "C" }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Qual o melhor jogador?",
+      "options": [
+        { "id": 1, "name": "Cristiano Ronaldo", "alias": "C" },
+        { "id": 2, "name": "Haaland", "alias": "B" },
+        { "id": 3, "name": "Neymar", "alias": "D" },
+        { "id": 4, "name": "Messi", "alias": "A" }
+      ]
+    }
+  ],
+  "results": {
+
+
+    "A": "Betinha sem aura",
+    "B": "Nossa, nada de aura hein!",
+    "C": "Aura menos Ego",
+    "D": "Desiste, você não tem aura"
+  }
+
+
+}

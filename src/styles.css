@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding:0;
+  margin:0;
+  border:0;
+  box-sizing: border-box;
+  color:antiquewhite;
+}
+
+body{
+  /* background: #020024;
+  background: linear-gradient(157deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 26%, rgba(35, 56, 110, 1) 70%, rgba(0, 212, 255, 1) 100%); */
+  background: #020024;
+background: linear-gradient(332deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 26%, rgba(35, 56, 110, 1) 70%, rgba(0, 212, 255, 1) 100%);
+}
