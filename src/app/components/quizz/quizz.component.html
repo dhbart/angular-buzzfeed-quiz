@@ -5,7 +5,7 @@
     <h1>{{title}}</h1>
   </div>
 
-  <div *ngIf=!finished class="quizz_questions">
+  <div *ngIf="!finished && !calculating" class="quizz_questions">
       <h3>{{questionSelected.question}}</h3>
   </div>
 
