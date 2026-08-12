@@ -22,23 +22,66 @@ export class QuizzComponent implements OnInit {
 
   finished:boolean = false
 
+  calculating: boolean = false;
+
+  loadingMessage: string = "";
+
+  loadingMessages: string[] = [
+    "🧠 Calculando sua aura...",
+    "📈 Medindo seu nível de Sigma...",
+    "🥖 Contando a quantidade de farinha...",
+    "🤖 Consultando o Conselho dos Brainrots...",
+    "💀 Evitando virar Betinha...",
+    "🔥 Farmando Aura...",
+    "📡 Procurando seu animal espiritual...",
+    "✨ Resultado quase pronto..."
+  ];
+
   constructor() { }
 
-  ngOnInit(): void {
-    if(quizz_questions){
-      this.finished = false
-      this.title = quizz_questions.title
+ ngOnInit(): void {
+  this.startQuiz();
+}
 
-      this.questions = quizz_questions.questions
-      this.questionSelected = this.questions[this.questionIndex]
+  private showLoadingAnimation(callback: () => void) {
 
-      this.questionIndex = 0
-      this.questionMaxIndex = this.questions.length
+    this.calculating = true;
 
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
-    }
+    let index = 0;
 
+    this.loadingMessage = this.loadingMessages[index];
+
+    const interval = setInterval(() => {
+
+    const random =
+        Math.floor(Math.random() * this.loadingMessages.length);
+
+      this.loadingMessage = this.loadingMessages[random];
+
+    }, 900);
+
+    setTimeout(() => {
+      clearInterval(interval);
+      this.calculating = false;
+      callback();
+  }, 10000);
+
+}
+
+  startQuiz() {
+    this.answers = [];
+    this.answerSelected = "";
+    this.questionIndex = 0;
+    this.finished = false;
+
+    this.title = quizz_questions.title;
+    this.questions = quizz_questions.questions;
+    this.questionMaxIndex = this.questions.length;
+    this.questionSelected = this.questions[this.questionIndex];
+  }
+
+  restartQuiz() {
+    this.startQuiz();
   }
 
   playerChoose(value:string){
@@ -53,9 +96,18 @@ export class QuizzComponent implements OnInit {
     if(this.questionMaxIndex > this.questionIndex){
         this.questionSelected = this.questions[this.questionIndex]
     }else{
-      const finalAnswer:string = await this.checkResult(this.answers)
-      this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
+      this.showLoadingAnimation(async () => {
+
+      const finalAnswer = await this.checkResult(this.answers);
+
+      this.answerSelected =
+        quizz_questions.results[
+          finalAnswer as keyof typeof quizz_questions.results
+        ];
+
+      this.finished = true;
+
+    });
     }
   }
 
@@ -80,5 +132,6 @@ export class QuizzComponent implements OnInit {
     return winner;
 
   }
+
 
 }

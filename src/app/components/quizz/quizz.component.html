@@ -9,7 +9,7 @@
       <h3>{{questionSelected.question}}</h3>
   </div>
 
-  <div *ngIf=!finished class="quizz_options">
+  <div *ngIf="!finished && !calculating" class="quizz_options">
 
     <button
       *ngFor="let option of questionSelected.options; let i = index"
@@ -21,8 +21,17 @@
 
   </div>
 
-  <div *ngIf=finished class="quizz_results">
+  <div *ngIf="calculating" class="loading">
+
+    <div class="spinner"></div>
+
+    <h2>{{ loadingMessage }}</h2>
+
+  </div>
+
+  <div *ngIf="finished" class="quizz_results">
     <h1>O Seu resultado é:</h1>
     <h2>{{answerSelected}}</h2>
+    <button type="reset" (click)="restartQuiz()">Recomeçar</button>
   </div>
 </div>

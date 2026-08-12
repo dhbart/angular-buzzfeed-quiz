@@ -89,15 +89,34 @@
         { "id": 3, "name": "Neymar", "alias": "D" },
         { "id": 4, "name": "Messi", "alias": "A" }
       ]
+    },
+    {
+      "id": 10,
+      "question": "Qual emoji mais combina com você?",
+      "options": [
+        { "id": 1, "name": "🗿", "alias": "B" },
+        { "id": 2, "name": "🔥", "alias": "C" },
+        { "id": 3, "name": "💀", "alias": "A" },
+        { "id": 4, "name": "😂", "alias": "D" }
+      ]
+    }
+    ,
+    {
+      "id": 11,
+      "question": "Qual vídeo você assistiria?",
+      "options": [
+        { "id": 1, "name": "Gameplay de Roblox", "alias": "D" },
+        { "id": 2, "name": "Edit de anime", "alias": "B" },
+        { "id": 3, "name": "Brainrot italiano (Aura)", "alias": "C" },
+        { "id": 4, "name": "Vlog de rotina", "alias": "A" }
+      ]
     }
   ],
   "results": {
-
-
     "A": "Betinha sem aura",
-    "B": "Nossa, nada de aura hein!",
-    "C": "Aura menos Ego",
-    "D": "Desiste, você não tem aura"
+    "B": "Sigma",
+    "C": "Aura + Ego",
+    "D": "Feijão com farinha",
   }
 
 
